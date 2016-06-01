@@ -156,12 +156,16 @@ public abstract class UITestCaseCommon extends TestCase {
 		//run the test in a separate monitored thread
 		new SequenceRunner(execMonitor).exec(new IRunnable(){
 			public void run() throws Throwable {
+				Throwable exception = null;
 				runStarted();
 				try {
 					runnable.run();
+				}catch(Exception e){
+					exception = e;
 				} finally {
 					runFinished();
 				}
+				if(exception!=null){throw exception;}
 			}
 		});		
 		

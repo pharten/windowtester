@@ -588,7 +588,7 @@ public class UIContextSWT extends UIContextCommon
         }	
 		
 		//in the error case, handle cleanup before throwing the exception
-		handleCleanup();
+		//handleCleanup();
 		
 		//be sure to reset find attempts for next find
 		_findAttempts = 0;

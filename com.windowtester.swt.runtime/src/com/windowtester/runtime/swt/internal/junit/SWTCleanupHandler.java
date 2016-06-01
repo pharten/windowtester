@@ -71,7 +71,7 @@ public class SWTCleanupHandler implements ITestCleanupHandler {
 	 */
 	public void cleanUp() {
 		closeNativeDialogs();
-		dismissUnexpectedMenus();
+		//dismissUnexpectedMenus();
 		closeUnexpectedShells();
 	}
 
