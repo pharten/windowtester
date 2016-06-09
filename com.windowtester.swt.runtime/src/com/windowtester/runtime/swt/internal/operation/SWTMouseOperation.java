@@ -13,6 +13,7 @@ package com.windowtester.runtime.swt.internal.operation;
 import org.eclipse.swt.graphics.Point;
 
 import com.windowtester.runtime.WT;
+import com.windowtester.runtime.swt.internal.widgets.DisplayReference;
 import com.windowtester.runtime.swt.internal.widgets.SWTWidgetReference;
 
 /**
@@ -57,6 +58,7 @@ public class SWTMouseOperation extends SWTOperation
 	 */
 	public SWTMouseOperation(int accelerator) {
 		this.accelerator = accelerator;
+		SWTOperation.setDisplayRef();
 	}
 
 	/**

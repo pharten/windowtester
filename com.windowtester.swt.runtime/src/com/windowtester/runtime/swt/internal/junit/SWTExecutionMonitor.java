@@ -132,7 +132,7 @@ public class SWTExecutionMonitor extends AbstractExecutionMonitor {
 	 * @see com.windowtester.internal.runtime.junit.core.AbstractExecutionMonitor#exceptionCaught(java.lang.Throwable)
 	 */
 	public void exceptionCaught(Throwable e) {		
-		takeScreenShotIfNecessary(e);
+		//takeScreenShotIfNecessary(e);
 		cleanUp(); //cleanup so that the exception gets properly propagated
 		super.exceptionCaught(e);
 	}

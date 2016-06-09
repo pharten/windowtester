@@ -84,12 +84,13 @@ public class UITestCaseSWT extends UITestCaseCommon {
 			public void postFlight() {
 				//System.out.println("introspecting...");
 				Display display = new DisplayIntrospection(INTROSPECTION_TIMEOUT).syncIntrospect();
+				System.out.println(display);
 				if (display == null)
 					throw new AssertionError("display introspection failed");
 				//System.out.println("done introspecting...");
 			}
 			public void preFlight() {
-				//do nothing
+					//do nothing
 			}
 		});
 	}

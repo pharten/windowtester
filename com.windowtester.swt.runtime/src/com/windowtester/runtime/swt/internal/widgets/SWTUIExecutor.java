@@ -81,7 +81,10 @@ class SWTUIExecutor<T>
 	 *             is called on the SWT UI thread.
 	 */
 	T run(Display display, long maxWaitTime, int interval) {
-
+		if(display.isDisposed()){
+			// System.out.println("Disposed: " + display);
+			return null;
+		}
 		// Initialize the execution fields
 
 		synchronized (LOCK) {

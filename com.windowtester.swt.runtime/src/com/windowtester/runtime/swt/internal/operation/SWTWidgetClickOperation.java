@@ -71,7 +71,9 @@ public abstract class SWTWidgetClickOperation<T extends SWTWidgetReference<?>> {
 		
 	public void execute() {
 	  	SWTLocation loc = getLocation();
-		new SWTMouseOperation(getModifiers()).at(loc).count(getClicks()).execute();		
+	  	int mod = getModifiers();
+	  	int clic = getClicks();
+		new SWTMouseOperation(mod).at(loc).count(clic).execute();		
 	}
 
 	protected abstract SWTLocation getLocation();

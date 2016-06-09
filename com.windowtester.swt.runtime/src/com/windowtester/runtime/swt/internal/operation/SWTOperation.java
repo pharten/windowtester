@@ -45,9 +45,15 @@ public abstract class SWTOperation
 	/**
 	 * The display for this operation.
 	 */
-	protected static final DisplayReference displayRef = DisplayReference.getDefault();
-	// TODO [Dan] Initialize this via a constructor
+	protected static DisplayReference displayRef;
+	
+	public static DisplayReference getDisplayRef() {
+		return displayRef;
+	}
 
+	public static void setDisplayRef() {
+		SWTOperation.displayRef = DisplayReference.getDefault();;
+	}
 	/**
 	 * The keyboard modifier keys
 	 */
