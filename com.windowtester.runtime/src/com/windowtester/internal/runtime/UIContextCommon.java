@@ -275,7 +275,7 @@ public abstract class UIContextCommon
 	public void doScreenCapture(String desc) {
 		String testcaseID = TestMonitor.getInstance().getCurrentTestCaseID();
 		TraceHandler.trace(IRuntimePluginTraceOptions.CONDITIONS, "Creating screenshot ("+ desc +") for testcase: " + testcaseID);
-	    ScreenCapture.createScreenCapture(testcaseID);
+	    //ScreenCapture.createScreenCapture(testcaseID);
 	}
 
 

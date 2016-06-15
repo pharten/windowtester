@@ -99,7 +99,7 @@ public class RetrySupport {
 		});
 		
 		if (ex[0] != null) {
-			ScreenCapture.createScreenCapture();
+			//ScreenCapture.createScreenCapture();
 			throw ex[0];
 		}
 		return clicked;

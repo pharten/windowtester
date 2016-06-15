@@ -216,7 +216,7 @@ public abstract class UIThreadMonitorCommon
 
 		// log current thread state before triggering shutdown
 		stackTraces = ThreadUtil.getStackTraces();
-		screenCapture = ScreenCapture.createScreenCapture("UIThreadMonitor-timeout");
+		//screenCapture = ScreenCapture.createScreenCapture("UIThreadMonitor-timeout");
 		Logger.log("UIThreadMonitor: timeout, current thread state\n", stackTraces);
 
 		if (listener != null) {

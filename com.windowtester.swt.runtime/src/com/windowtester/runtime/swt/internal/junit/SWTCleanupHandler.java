@@ -202,7 +202,7 @@ public class SWTCleanupHandler implements ITestCleanupHandler {
 	
 	private void createScreenCapture(String desc) {
 		TraceHandler.trace(IRuntimePluginTraceOptions.CONDITIONS, "Creating screenshot ("+ desc +") for testcase: " + getId());
-		ScreenCapture.createScreenCapture(getId());
+		//ScreenCapture.createScreenCapture(getId());
 	}
 	
 	/**

@@ -91,7 +91,7 @@ public class TreeItemSelector2 extends BasicWidgetSelector {
 			catch (WidgetSearchException e) {
 				// [Dan] Can't figure out where the screen capture call was so add it here. 
 				// Should probably rethink this when overhauling the selector classes
-				ScreenCapture.createScreenCapture();
+				//ScreenCapture.createScreenCapture();
 				throw e;
 			}
 			//reveal item

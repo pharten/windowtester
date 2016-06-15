@@ -302,7 +302,7 @@ public class ExceptionHandlingHelper {
 	public static void doScreenCapture(String desc) {
 		String testcaseID = TestMonitor.getInstance().getCurrentTestCaseID();
 		TraceHandler.trace(IRuntimePluginTraceOptions.WIDGET_SELECTION, "Creating screenshot (" + desc + ") for testcase: " + testcaseID);
-		ScreenCapture.createScreenCapture(testcaseID /*+ "_" + desc*/);
+		//ScreenCapture.createScreenCapture(testcaseID /*+ "_" + desc*/);
 	}
 	
 	/**

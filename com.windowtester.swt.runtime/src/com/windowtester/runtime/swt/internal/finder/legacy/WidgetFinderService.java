@@ -78,7 +78,7 @@ public class WidgetFinderService {
 		try {
 			result = _finder.find(searchScope /*_display*/, matcher, 0 /* no retries */);
 		} catch(RootWidgetIsNullError e) {
-			ScreenCapture.createScreenCapture();
+			//ScreenCapture.createScreenCapture();
 			throw new UnableToFindActiveShellException();
 		}
 		

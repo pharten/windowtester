@@ -617,7 +617,7 @@ public class UIContextSWT extends UIContextCommon
 	 * Handle cleanup.  Consider making this protected so subclasses can override.
 	 */
 	private void handleCleanup() {
-		takeScreenShot();
+		//takeScreenShot();
 		closeOpenShells();
 	}
 

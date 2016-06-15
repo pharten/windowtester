@@ -60,7 +60,7 @@ public class AssertionHandler implements IAssertionHandler {
 //		if (becomesTrue(conditionHandler))
 //			return;
 		conditionHandler.handle(getUI());
-		assertThat(conditionHandler);
+		//assertThat(conditionHandler);
 	}
 
 

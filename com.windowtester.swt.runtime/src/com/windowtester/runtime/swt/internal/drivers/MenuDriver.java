@@ -110,7 +110,7 @@ public class MenuDriver
 		// If any exception occurs, take a screenshot and close any open menus
 
 		catch (Exception e) {
-			ScreenCapture.createScreenCapture();
+			//ScreenCapture.createScreenCapture();
 			DisplayReference.getDefault().closeAllMenus();
 			throw e;
 		}

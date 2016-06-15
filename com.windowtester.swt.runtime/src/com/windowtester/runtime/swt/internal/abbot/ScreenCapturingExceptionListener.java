@@ -48,6 +48,6 @@ public class ScreenCapturingExceptionListener implements IExceptionListener {
 		TraceHandler.trace(IRuntimePluginTraceOptions.WIDGET_SELECTION, "Creating screenshot: " + desc + " for testcase: " + testcaseID);
         //TODO: make this filename format user configurable
 		//skipping description for now (to be consistent for all errors)
-		ScreenCapture.createScreenCapture(testcaseID /*+ "_" + desc*/);
+		//ScreenCapture.createScreenCapture(testcaseID /*+ "_" + desc*/);
 	}
 }

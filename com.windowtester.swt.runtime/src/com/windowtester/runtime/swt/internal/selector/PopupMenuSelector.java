@@ -101,7 +101,7 @@ public class PopupMenuSelector extends BasicWidgetSelector {
     
 	private void takeScreenShot() {
 		String testcaseID = TestMonitor.getInstance().getCurrentTestCaseID();
-		ScreenCapture.createScreenCapture(testcaseID);
+		//ScreenCapture.createScreenCapture(testcaseID);
 	}
     
     

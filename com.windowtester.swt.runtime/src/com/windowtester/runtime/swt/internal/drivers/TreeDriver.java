@@ -100,7 +100,7 @@ public class TreeDriver
 						}
 						continue;
 					}
-					ScreenCapture.createScreenCapture();
+					//ScreenCapture.createScreenCapture();
 					throw e;
 				}
 				catch (MultipleWidgetsFoundException e) {

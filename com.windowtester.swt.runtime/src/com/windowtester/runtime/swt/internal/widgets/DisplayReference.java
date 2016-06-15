@@ -38,9 +38,6 @@ public class DisplayReference
 	}
 
 	public DisplayReference(Display display) {
-//		System.out.println("Display Ref: " + display);
-//		System.out.println("Display Default: " + Display.getDefault());
-//		System.out.println("==============");
 		this.display = display;
 	}
 

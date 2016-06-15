@@ -34,8 +34,8 @@ public class SWTExecutionMonitor extends AbstractExecutionMonitor {
 	
 	private class ScreenShotHandler {
 		private  void takeScreenshotIfNecessary(Throwable e) {
-			if (!previouslyHandled(e))
-				ScreenCapture.createScreenCapture();
+//			if (!previouslyHandled(e))
+//				ScreenCapture.createScreenCapture();
 		}
 		//widget search exceptions trigger screen shots before reaching here
 		//TODO: a thought: we could tag exceptions as having an associated screen shot...

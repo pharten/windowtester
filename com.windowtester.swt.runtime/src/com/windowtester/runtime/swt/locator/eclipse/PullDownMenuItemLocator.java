@@ -143,7 +143,7 @@ public class PullDownMenuItemLocator extends SWTWidgetLocator implements IPathLo
 			throws WidgetNotFoundException {
 		final Object ref = widget.getWidget();
 		if (!isVisible(ref)) {
-			ScreenCapture.createScreenCapture();
+			//ScreenCapture.createScreenCapture();
 			throw new WidgetNotFoundException("Menu host not visible");
 		}
 
