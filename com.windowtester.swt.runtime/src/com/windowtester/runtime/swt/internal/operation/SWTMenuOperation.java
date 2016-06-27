@@ -203,7 +203,6 @@ public abstract class SWTMenuOperation extends SWTOperation
 			private boolean first = true;
 
 			public void executeInUI() throws Exception {
-
 				// If the click was canceled, then retry if possible
 
 				if (clickCanceled) {
@@ -257,7 +256,7 @@ public abstract class SWTMenuOperation extends SWTOperation
 	 */
 	protected abstract void retryAfterBadSelection(String message);
 
-	protected static final MenuFilter menuFilter = new MenuFilter();
+	protected MenuFilter menuFilter = new MenuFilter();
 
 	/**
 	 * Watch SWT Events waiting for a menu to become visible.

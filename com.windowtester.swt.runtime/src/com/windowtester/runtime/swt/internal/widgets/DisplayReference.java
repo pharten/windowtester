@@ -29,7 +29,7 @@ import com.windowtester.runtime.swt.internal.widgets.finder.MatchCollector;
 public class DisplayReference
 	implements IVisitable, ISearchable
 {
-	private static final int DEFAULT_EXEC_WAIT_TIME = 10000;
+	private static final int DEFAULT_EXEC_WAIT_TIME = 60000;
 
 	private final Display display;
 
