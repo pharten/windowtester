@@ -11,7 +11,7 @@
 package com.windowtester.runtime.swt.internal.commands.eclipse;
 
 import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.internal.ShowViewAction;
+//import org.eclipse.ui.internal.ShowViewAction;
 import org.eclipse.ui.views.IViewDescriptor;
 
 import com.windowtester.runtime.swt.locator.eclipse.ViewLocator;
@@ -19,7 +19,6 @@ import com.windowtester.runtime.swt.locator.eclipse.ViewLocator;
 /**
  * Command to show a view.
  */
-@SuppressWarnings("restriction")
 public class ShowViewCommand extends WorkbenchCommand {
 
 	private final ViewLocator view;
